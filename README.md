@@ -1,51 +1,49 @@
-# Быстрый Telegram AI Бот с Llama
+# Very simple Telegram AI Bot with Llama
 
-Этот бот использует модель Llama через OpenRouter API для генерации ответов на сообщения пользователей в Telegram. Я написал его за 15 минут на коленках, просто что-бы было.
+This bot uses the Llama model via the OpenRouter API to generate responses to user messages in Telegram. I wrote it in 15 minutes, just for fun.
 
-## Настройка
+## Setup
 
-1. Создайте бота в Telegram через [@BotFather](https://t.me/BotFather) и получите токен бота
-2. Получите API ключ на [OpenRouter](https://openrouter.ai/settings/keys)
-3. Откройте файл `main.py` и заполните следующие переменные:
+1. Create a bot in Telegram via [@BotFather](https://t.me/BotFather) and obtain the bot token.
+2. Get an API key from [OpenRouter](https://openrouter.ai/settings/keys).
+3. Open the `main.py` file and fill in the following variables:
    ```python
-   BOT_TOKEN = "ваш_токен_бота"
-   OPENROUTER_API_KEY = "ваш_ключ_openrouter"
+   BOT_TOKEN = "your_bot_token"
+   OPENROUTER_API_KEY = "your_openrouter_key"
    ```
 
-## Установка
+## Installation
 
-1. Убедитесь, что у вас установлен Python 3.7 или выше
-2. Установите необходимые зависимости:
+1. Ensure you have Python 3.7 or higher installed.
+2. Install the required dependencies:
    ```bash
    pip install pyTelegramBotAPI requests
    ```
 
-## Запуск
+## Running the Bot
 
-1. Запустите бота командой:
+1. Start the bot with the command:
    ```bash
    python main.py
    ```
-   Либо другим удобным способом
-2. После запуска вы увидите сообщение "Бот запущен..."
+   Or use any other convenient method.
+2. After launching, you will see the message "Бот запущен..."
 
-## Использование
+## Usage
 
-1. Найдите своего бота в Telegram по @юзернейму, которое вы указали при создании
-2. Отправьте команду `/start` для начала работы
-3. Просто отправьте любое сообщение боту, и он ответит вам, используя модель Llama
+1. Find your bot in Telegram by the @username you specified during creation.
+2. Send the `/start` command to begin.
+3. Simply send any message to the bot, and it will respond using the Llama model.
 
-## Особенности
+## Features
 
-- Бот использует модель meta-llama/llama-4-scout:free
-- Поддерживает все типы текстовых сообщений
-- Показывает статус "печатает..." во время генерации ответа
-- Автоматически обрабатывает ошибки API
-- Для генерации используется бесплатная модель (даже не придётся платить за дальнейшее продление проблной подписки, это навсегда бесплатно)
+- The bot uses the `meta-llama/llama-4-scout:free` model.
+- Supports all types of text messages.
+- Automatically handles API errors.
+- Uses a free model (no need to pay for further subscription extensions—it's free forever).
 
-## Примечания
+## Notes
 
-- Бот работает только с текстовыми сообщениями
-- Бот может не поодерживать некоторую Markdown-разметку
-- Скорость ответа зависит от загруженности API OpenRouter
-- Для корректной работы требуется стабильное интернет-соединение 
+- The bot only works with text messages.
+- The bot may not support certain Markdown formatting.
+- Response speed depends on the load of the OpenRouter API.
